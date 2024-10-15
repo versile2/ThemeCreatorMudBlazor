@@ -28,6 +28,7 @@
   
   <ItemGroup>
     <Folder Include="Logs\" />
+    <Folder Include="wwwroot\css\" />
   </ItemGroup>
   
 </Project>

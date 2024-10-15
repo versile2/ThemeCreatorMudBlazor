@@ -67,9 +67,9 @@
                 <MudText Typo="Typo.h6" Class="mb-4">Buttons</MudText>
                 <MudText>
                     <b>Filled: </b>
-                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ma-2">Primary</MudButton>
-                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ma-2">Secondary</MudButton>
-                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ma-2">Tertiary</MudButton>
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" data-tooltip="Primary" Class="ma-2 has-tooltip-primary">Primary</MudButton>
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" data-tooltip="Secondary" Class="ma-2 has-tooltip-secondary">Secondary</MudButton>
+                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" data-tooltip="Tertiary" Class="ma-2 has-tooltip-tertiary">Tertiary</MudButton>
                     <MudButton Variant="Variant.Filled" Color="Color.Surface" Class="ma-2">Surface</MudButton>
                     <MudButton Variant="Variant.Filled" Color="Color.Dark" Class="ma-2">Dark</MudButton>
                     <MudButtonGroup Color="Color.Tertiary" Variant="Variant.Filled">
@@ -85,10 +85,10 @@
                 <br />
                 <MudText>
                     <b>Outlined: </b>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Error" Class="ma-2">Error</MudButton>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Info" Class="ma-2">Info</MudButton>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Success" Class="ma-2">Success</MudButton>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Warning" Class="ma-2">Warning</MudButton>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Error" Class="ma-2 has-tooltip-error has-tooltip-arrow has-tooltip-bottom" data-tooltip="Error">Error</MudButton>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Info" Class="ma-2 has-tooltip-info has-tooltip-arrow has-tooltip-bottom" data-tooltip="Info">Info</MudButton>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Success" Class="ma-2 has-tooltip-success has-tooltip-arrow has-tooltip-bottom" data-tooltip="Success">Success</MudButton>
+                    <MudButton Variant="Variant.Outlined" Color="Color.Warning" Class="ma-2 has-tooltip-warning has-tooltip-arrow has-tooltip-bottom" data-tooltip="Warning">Warning</MudButton>
                     <MudButton Variant="Variant.Outlined" Color="Color.Transparent" Class="ma-2">Transparent</MudButton>
                     <MudButtonGroup OverrideStyles="false" Variant="Variant.Outlined">
                         <MudButton Color="Color.Tertiary" OnClick="@(() => _activeButtonId = 0)" Variant="@(_activeButtonId == 0 ? Variant.Filled : Variant.Outlined)">All</MudButton>

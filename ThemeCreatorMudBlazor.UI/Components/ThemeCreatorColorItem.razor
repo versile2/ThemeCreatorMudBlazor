@@ -1,7 +1,7 @@
 ﻿
 <MudOverlay @bind-Visible="_isOpen" AutoClose="true" />
-<div class="mud-list-item-clickable mud-ripple pr-4 py-3" @onclick="ToggleOpen" data-tooltip="@ToolTipText">
-    <MudStack Row AlignItems="AlignItems.Center" Class="pl-0 ml-0">
+<div class="mud-list-item-clickable mud-ripple pr-4 py-3 has-tooltip-multiline has-tooltip-overflow" @onclick="ToggleOpen" data-tooltip="@ToolTipText">
+    <MudStack Row AlignItems="AlignItems.Center" Class="pl-0 ml-0" >
         <!-- TODO Link tooltip somehow -->
             <MudText Typo="Typo.body2" Class="left-text">@Name</MudText>
             <MudIcon Class="palette-picker-icon" Icon="@Icons.Material.Filled.Palette" Style="@($"color: {DefaultColor}")" Size="Size.Small" />

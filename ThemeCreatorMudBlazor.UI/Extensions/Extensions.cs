@@ -20,6 +20,9 @@ namespace ThemeCreatorMudBlazor.UI.Extensions
         public static string AppCssVersion =>
             File.GetLastWriteTime(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "wwwroot", "app.css"))
                 .ToString("yyyyMMddHHmmss");
+        public static string AppToolTipExtensionVersion =>
+            File.GetLastWriteTime(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "wwwroot", "css", "tooltip-extensions.min.css"))
+                .ToString("yyyyMMddHHmmss");
         /// <summary>
         /// Return the current MudEx version
         /// </summary>
